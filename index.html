@@ -153,6 +153,9 @@
             text-decoration: none;
             display: flex;
             align-items: center;
+            gap: 0.6rem;
+            flex-shrink: 1;
+            min-width: 0;
         }
 
         .logo-icon {
@@ -989,11 +992,12 @@
             }
         }
         .logo-img {
-  height: 100px;
-  width: auto;
-  max-width: 160px;
-  display: block;
-  object-fit: contain;
+    height: 70px;
+    width: auto;
+    max-width: 120px;
+    display: block;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
         /* Responsive Nav & Logo */
@@ -1047,8 +1051,15 @@
         }
         @media (max-width: 480px) {
             .logo-img {
-                height: 50px;
-                max-width: 110px;
+                height: 38px;
+                max-width: 70px;
+            }
+            .logo {
+                font-size: 1.1rem;
+                gap: 0.3rem;
+            }
+            .logo span {
+                font-size: 1.1rem;
             }
         }
 
